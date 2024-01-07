@@ -1,0 +1,95 @@
+*{
+    padding:0 ;margin:0;
+    font-family: system-ui, sans-serif;
+    font-size: 15px;
+}
+/***** brand-img-card *****/ 
+
+.brand-card__img{
+    height:350px;
+    width: 300px;
+    object-fit:contain;
+    object-position: top center;
+    border-radius: 15px;
+}
+.brand-card__img img{
+    width: 300px;
+    height: 350px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+ /***** End brand-img-card *****/
+ /***** card-contant-components *****/ 
+  .brand-card__content .brand-card__content--logo{
+    font-size: .9em;
+    letter-spacing: 10px;
+    color: rgb(157, 158, 164);
+ }
+ .brand-card__content--header{
+    font-size: 2em;
+    font-weight: bolder;
+ }
+ .brand-card__content--para{
+    color: rgb(157, 158, 164);
+ }
+ .brand-card__content .price{
+    color: rgb(61, 129, 104);
+    font-size: 2.5em;
+    font-weight: bolder;
+ }
+ .brand-card__content .disabled{
+    text-decoration: line-through;
+    color: rgb(157, 158, 164);
+    box-sizing: border-box;
+    padding: 15px 15px;
+ }
+ .brand-card__content--rate{
+    height: 50px;width: 300px;
+     display: flex; 
+ }
+ .brand-card__content--rate :is( .brand-card__content .disabled,  .brand-card__content--rate){
+    height: 100%;width: 50%;
+ }
+ .brand-card__content--button{
+    width: 200px;
+    height: 50px;
+    background-color:rgb(61, 129, 104);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 0;
+    margin:20px 0 6px;
+ }
+ .brand-card__content--button a{
+    font-size: 1.4em;
+    font-weight: 600;
+     color: #fff; 
+ }
+ .brand-card__content{
+    height: 350px;width: 350px;
+    box-sizing: border-box;
+    padding: 10px 10px 0 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+ }
+ .brand-card{
+    display: flex;
+    height: 350px;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(234, 232, 232);
+ }
+ .brand-card__content
+  :is( .brand-card__content .brand-card__content--logo,  .brand-card__content--header, .brand-card__content--rate){
+    margin: 6px 0 10px;
+  }
+  /***** End card-contant-components *****/
+ .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+ }
+  body{
+    background-color: beige;
+  }
